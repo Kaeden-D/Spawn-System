@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using UnityEngine;
 
 public abstract class IFactory : MonoBehaviour
