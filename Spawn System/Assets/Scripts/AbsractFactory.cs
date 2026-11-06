@@ -7,18 +7,19 @@ public class AbsractFactory : MonoBehaviour
     private RedFactory _redFactory;
     [SerializeField]
     private BlueFactory _blueFactory;
+    [SerializeField]
+    private GreenFactory _greenFactory;
 
     private IFactory _curFactory = null;
 
     private void OnGUI()
     {
-        if (_curFactory != null && GUILayout.Button("Spawn Cube"))
+        if (_curFactory != null && GUILayout.Button("Spawn Shape"))
         {
-            _curFactory.SpawnCube();
-        }
-        if (_curFactory != null && GUILayout.Button("Spawn Sphere"))
-        {
-            _curFactory.SpawnSphere();
+            if ((int)Time.time % 2 == 0)
+                _curFactory.SpawnCube();
+            else
+                _curFactory.SpawnSphere();
         }
         if (_curFactory != null && GUILayout.Button("Spawn Shapes"))
         {
@@ -33,6 +34,10 @@ public class AbsractFactory : MonoBehaviour
         if (_curFactory != _blueFactory && GUILayout.Button("Change Color To Blue"))
         {
             _curFactory = _blueFactory;
+        }
+        if (_curFactory != _greenFactory && GUILayout.Button("Change Color To Green"))
+        {
+            _curFactory = _greenFactory;
         }
     }
 
