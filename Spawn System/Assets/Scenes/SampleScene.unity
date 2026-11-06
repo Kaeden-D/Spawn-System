@@ -438,6 +438,7 @@ GameObject:
   - component: {fileID: 1946169428}
   - component: {fileID: 1946169427}
   - component: {fileID: 1946169426}
+  - component: {fileID: 1946169429}
   m_Layer: 0
   m_Name: Factory
   m_TagString: Untagged
@@ -500,6 +501,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _redFactory: {fileID: 1946169427}
   _blueFactory: {fileID: 1946169426}
+  _greenFactory: {fileID: 1946169429}
+--- !u!114 &1946169429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946169424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b1fa7c9b99049b45ab798a7b8fdba4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 32ec4b19dfbf96640a525895db31cb9a, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

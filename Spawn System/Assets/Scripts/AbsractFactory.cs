@@ -31,13 +31,13 @@ public class AbsractFactory : MonoBehaviour
         {
             _curFactory = _redFactory;
         }
-        if (_curFactory != _blueFactory && GUILayout.Button("Change Color To Blue"))
-        {
-            _curFactory = _blueFactory;
-        }
         if (_curFactory != _greenFactory && GUILayout.Button("Change Color To Green"))
         {
             _curFactory = _greenFactory;
+        }
+        if (_curFactory != _blueFactory && GUILayout.Button("Change Color To Blue"))
+        {
+            _curFactory = _blueFactory;
         }
     }
 
